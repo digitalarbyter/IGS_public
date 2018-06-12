@@ -10,5 +10,5 @@ The code will then return the wanted informationen which you can store or do wha
 With this code-example you can gain the following information out-of-the-box without any hassle:
 * Number of followers
 * Number of followings
-+ Number of uploaded Posts
+* Number of uploaded Posts
 * Biography of the user-profile
