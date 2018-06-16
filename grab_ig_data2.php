@@ -8,5 +8,7 @@ $followers=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['edge_
 $followed_by=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['edge_follow']['count'];
 $biography=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['biography'];
 $uploads=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['edge_owner_to_timeline_media']['count'];
-echo $followers." / ".$followed_by." / ".$uploads." / ".$biography."<br /><br />";
+$profile_pic=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['profile_pic_url'];
+$profile_pic_hd=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['profile_pic_url_hd'];
+echo $followers." / ".$followed_by." / ".$uploads." / ".$biography;
 ?>
