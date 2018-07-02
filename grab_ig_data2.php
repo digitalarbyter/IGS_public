@@ -10,5 +10,6 @@ $biography=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['biogr
 $uploads=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['edge_owner_to_timeline_media']['count'];
 $profile_pic=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['profile_pic_url'];
 $profile_pic_hd=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['profile_pic_url_hd'];
-echo $followers." / ".$followed_by." / ".$uploads." / ".$biography;
+$username=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['username'];
+echo $username." / ".$followers." / ".$followed_by." / ".$uploads." / ".$biography;
 ?>
