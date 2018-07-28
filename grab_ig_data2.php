@@ -18,6 +18,7 @@ if($ig_data === false)
   $profile_pic_hd=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['profile_pic_url_hd'];
   $username=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['username'];
   $userid=$data_array['entry_data']['ProfilePage'][0]['logging_page_id'];
-  echo $username." / ".$followers." / ".$followed_by." / ".$uploads." / ".$biography." / ".$userid;
+  $user_external_url=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['external_url'];
+  echo $username." / ".$followers." / ".$followed_by." / ".$uploads." / ".$biography." / ".$userid." / ".$user_external_url;
 }
 ?>
