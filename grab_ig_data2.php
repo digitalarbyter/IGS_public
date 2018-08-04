@@ -17,12 +17,12 @@ if($ig_data === false)
   $profile_pic=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['profile_pic_url'];
   $profile_pic_hd=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['profile_pic_url_hd'];
   $username=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['username'];
-  $userid=$data_array['entry_data']['ProfilePage'][0]['logging_page_id'];
   $user_external_url=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['external_url'];
   $user_full_name=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['full_name'];
   $user_is_private=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['is_private'];
   $user_is_verified=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['is_verified'];
+  $user_id=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['id'];
 
-  echo $username." / ".$followers." / ".$followed_by." / ".$uploads." / ".$biography." / ".$userid." / ".$user_external_url." / ".$user_full_name." / ".$user_is_private." / ".$user_is_verified;
+  echo $username." / ".$followers." / ".$followed_by." / ".$uploads." / ".$biography." / ".$user_id." / ".$user_external_url." / ".$user_full_name." / ".$user_is_private." / ".$user_is_verified;
 }
 ?>
