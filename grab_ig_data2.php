@@ -22,7 +22,9 @@ if($ig_data === false)
   $user_is_private=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['is_private'];
   $user_is_verified=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['is_verified'];
   $user_id=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['id'];
+  $post_comments=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['edge_owner_to_timeline_media']['edges'][0]['node']['edge_media_to_comment']['count'];
+  $post_likes=$data_array['entry_data']['ProfilePage'][0]['graphql']['user']['edge_owner_to_timeline_media']['edges'][0]['node']['edge_liked_by']['count'];
 
-  echo $username." / ".$followers." / ".$followed_by." / ".$uploads." / ".$biography." / ".$user_id." / ".$user_external_url." / ".$user_full_name." / ".$user_is_private." / ".$user_is_verified;
+  echo $username." / ".$followers." / ".$followed_by." / ".$uploads." / ".$biography." / ".$user_id." / ".$user_external_url." / ".$user_full_name." / ".$user_is_private." / ".$user_is_verified." / ".$post_comments." / ".$post_likes;
 }
 ?>
